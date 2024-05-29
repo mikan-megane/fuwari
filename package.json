@@ -8,7 +8,7 @@
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint 'src/**/*.{js,astro}'"
+    "lint": "biome check --apply-unsafe ."
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.6.0",
+    "@biomejs/biome": "1.7.3",
     "@iconify-json/fa6-brands": "^1.1.18",
     "@iconify-json/fa6-regular": "^1.1.18",
     "@iconify-json/fa6-solid": "^1.1.20",
@@ -55,9 +56,6 @@
     "@types/markdown-it": "^14.0.0",
     "@types/mdast": "^4.0.3",
     "@types/sanitize-html": "^2.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^9.3.0",
-    "eslint-plugin-astro": "^1.2.0",
     "stylus": "^0.63.0"
   },
   "pnpm": {
